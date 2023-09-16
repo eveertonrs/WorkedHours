@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="Alessandro P. Souza">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://www.workedhours.com/off/storage/image/32/32/c3lzL2Zhdmljb24tZmF2aWNvbi1jZWJhNjM0MjU4NmEwNzZjNjY1NmIxM2FlZTE3YjYxYy5wbmc=.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.workedhours.com/off/storage/image/16/16/c3lzL2Zhdmljb24tZmF2aWNvbi1jZWJhNjM0MjU4NmEwNzZjNjY1NmIxM2FlZTE3YjYxYy5wbmc=.png">
+
+    <title>Dashboard - Worked Hours</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="dashboard" style="height: 100vh; justify-content: center !important;">
+        <nav class="dashboard-nav">
+            <a href="{{ url_for('loginadmin') }}">
+                <div>
+                    <p>Admin</p>
+                </div>
+            </a>
+            <a href="{{ url_for('loginadriver') }}">
+                <div>
+                    <p>Drivers</p>
+                </div>
+            </a>
+        </nav>
+    </main>
+</body>
+
+</html>
